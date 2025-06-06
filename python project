@@ -1,0 +1,29 @@
+Problem Statement: Readers want to track their reading habits and organize their book lists. Helps users track their reading habits, log books/articles, take notes, set goals, and review progress.
+
+Core Features:
+•	Add entries with book/article title, author, pages read, start/end date
+•	Add personal notes or review
+•	Mark items as “Reading”, “Completed”, or “Abandoned”
+•	Dashboard with stats: total read, in-progress, etc.
+•	Search by title, author, or tag
+
+Backend:
+•	/register – Create Account
+•	/login - Login
+•	/logout – Logout
+•	/books – Viewing books list
+•	/books/add – Add a book
+•	/books/{id} – View/Edit/Delete Book
+
+Schema:
+reading_entries 
+  id,  title, author, status eg:Reading, Completed, Abandoned
+  pages_read, total_pages, start_date,end_date, notes, tag
+users
+id, username, password
+
+Frontend:
+•  Reading Cards: Display book title, status, and progress bar
+•  Status Badges: Bootstrap badge showing “Completed” or “In Progress”
+•  Search & Filter: By tag or title
+•  Modals: For adding/editing entries
